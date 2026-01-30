@@ -29,7 +29,6 @@ body{
   /* position:relative; */
 }
 
-/* Logo */
 .logo{
   display:flex;
   align-items:center;
@@ -38,7 +37,7 @@ body{
   letter-spacing:0.5px;
 }
 
-/* Nav links */
+
 .nav-links{
   list-style:none;
   display:flex;
@@ -95,7 +94,7 @@ body{
   
 }
 .rightnav{
-  margin-left:15px;     /* 🔥 magic line */
+  margin-left:15px;     
   display:flex;
   align-items:center;
   gap:16px;
@@ -274,7 +273,7 @@ body{
   transition: 0.3s;
 }
 
-/* footer section start */
+
 .footer{
   height: 500px;
   color: #fff;
@@ -369,22 +368,15 @@ body{
 body.light{
   background-color: #ffffff;
   color: #000;
- 
-
 }
-
 body.light .navbar,
 body.light .footer{
   background:#f4f6fb;
 }
-
 body.light a{
   color:#111;
 }
-
-
-
- body.light .navbar {
+body.light .navbar {
   background-color: #f4f6fb; 
   border-bottom: 2px solid rgba(74, 36, 157, 0.908); 
   color: #000; 
@@ -441,4 +433,5 @@ body.light .icons a {
 }
 .project-btn{
   color: #ffffff;
+
 }
