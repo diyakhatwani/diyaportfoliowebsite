@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="css/about.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<style>
+ 
+</style>
+
+<body>
+<nav class="navbar">
+  <div class="logo">Diya</div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="rightnav">
+    <button class="btn" id="theme">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search">
+    </div>
+  </div>
+</nav>
+
+
+<div class="main">
+  <section class="about">
+    <div class="leftimg">
+      <img src="images/about.jpeg" alt="About Me">
+    </div>
+    <div class="rightcontent">
+  <span class="tag">About Me</span>
+  <h2>Find all my details here...</h2>
+  <p>
+    I am a second-year college student and a passionate web developer with a
+    strong interest in creating clean, responsive, and user-friendly websites.
+    I enjoy turning ideas into real-world projects using modern web
+    technologies.
+  </p>
+  <p>
+    I am continuously learning and improving my skills by building projects
+    and exploring new tools and design trends. My goal is to grow as a
+    developer and gain real-world experience through internships and
+    freelance opportunities.
+  </p>
+ 
+</div>
+
+    </div>
+  </section>
+<div class="divide"></div>
+
+<section class="about-section">
+
+  <div class="card card1">
+    <h3><i class="fas fa-school"></i> Education</h3>
+    <p>Secondary (10th) - <strong>percentage:82%</strong></p>
+    <p>Senior Secondary (12th) - <strong>percentage: 86%</strong></p>
+    <p>Graduation(1 year) - <strong>CGPA: 8.8</strong></p>
+   
+  </div>
+
+  <div class="card card2">
+     <h3><i class="fas fa-code"></i> Programming</h3>
+    <p>C Programming</p>
+    <p>C++ Programming</p>
+    <p>Java Programming</p>
+    
+  </div>
+
+  <div class="card card3">
+    <h3><i class="fas fa-user"></i> Soft Skills</h3>
+    <p>Communication</p>
+    <p>Teamwork</p>
+    <p>Time Management</p>
+  </div>
+
+  <div class="card card4">
+    <h3><i class="fas fa-tools"></i> Other Tools</h3>
+    <p>MS-word</p>
+    <p>Ms-Excel</p>
+    <p>MS-PowerPoint</p>
+    <p>Canva</p>
+  </div>
+
+  <div class="card card5">
+    <h3><i class="fas fa-globe"></i> Web Tech</h3>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
+  </div>
+
+  <div class="card card6">
+    <h3><i class="fas fa-database"></i> Database</h3>
+    <p>SQL</p>
+    <p>Basic DBMS</p>
+  </div>
+
+</section>
+</div>
+<footer>
+ <!-- footer -->
+  <footer class="footer">
+    <div class="footerCont">
+
+      <div class="footer-box">
+        <h2>Diya Khatwani</h2>
+        <p>BCA Student <br>
+          Passionate about building responsive websites.</p>
+      </div>
+
+
+      <div class="footer-box">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p>diyakhatwani363@gmail.com</p>
+        <p>Location: India</p>
+      </div>
+
+
+      <div class="footer-box">
+        <h3>Education</h3>
+        <p>BCA</p>
+        <p>
+          <a href="https://www.dezyneecole.com/" target="_blank" class="dez">Dezyne École College</a>
+        </p>
+        <p>2024 - 2027</p>
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+      <p>© 2026 Diya Khatwani.All rights Reserved</p>
+      <a href="https://www.dezyneecole.com/" target="_blank" class="decole">Dezyne École College</a>
+
+      <div class="icon">
+        <a href="https://www.github.com/diyakhatwani" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://stackoverflow.com/users/32266241/diya-khatwani" target="_blank" target="_blank"><i
+            class="fab fa-stack-overflow"></i></a>
+        <a href="https://medium.com/@khatwanidiya8" target="_blank" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="https://www.linkedin.com/in/diya-khatwani-173b99397/" target="_blank" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_diya_khatwani_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+<script >
+   const btn = document.getElementById("theme");
+  const icon = btn.querySelector("i");
+    if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+    icon.classList.replace("fa-moon", "fa-sun");
+    
+  } else {
+    document.body.classList.remove("light");
+    icon.classList.replace("fa-sun", "fa-moon");
+   
+  }
+  btn.onclick = () => {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+      localStorage.setItem("theme", "light");
+      icon.classList.replace("fa-moon", "fa-sun");
+      img.src = "home final.png";
+    } else {
+      localStorage.setItem("theme", "dark");
+      icon.classList.replace("fa-sun", "fa-moon");
+      img.src = "home final.png";
+    }
+  };
+   const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</body>
+</html>

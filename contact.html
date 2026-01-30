@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Diya</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Diya</div>
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="rightnav">
+      <button class="btn" id="theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="contact">
+   
+    <div class="info">
+      <h2>Get in Touch</h2>
+      <p>Feel free to reach out for any project inquiries or just to say hi! I’ll get back to you as soon as possible.</p>
+      <p><strong>Email:</strong> diyakhatwani@gmail.com</p>
+      <p><strong>Phone:</strong> +91 123 456 7890</p>
+    
+    <div class="social-icons">
+    <a href="https://www.linkedin.com/in/diya-khatwani-173b99397/" target="_blank" class="info-btn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.github.com/diyakhatwani" target="_blank" class="info-btn"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/_diya_khatwani_/" target="_blank" class="info-btn"><i class="fab fa-instagram"></i></a>
+    <a href="https://medium.com/@khatwanidiya8" target="_blank" class="info-btn"><i class="fab fa-medium"></i></a>
+    <a href="https://stackoverflow.com/users/32266241/diya-khatwani" target="_blank" class="info-btn"><i class="fab fa-stack-overflow"></i></a>
+    
+  </div>
+    </div>
+    <div class="contactform">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+  <input type="text" name="name" placeholder="Your Name">
+<small class="error"></small>
+
+<input type="email" name="email" placeholder="Your Email">
+<small class="error"></small>
+
+<textarea name="message" rows="6" placeholder="Your Message"></textarea>
+<small class="error"></small>
+
+<button type="submit">Send Message</button>
+
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footerCont">
+
+    <div class="footer-box">
+      <h2>Diya Khatwani</h2>
+      <p>BCA Student <br>
+        Passionate about building responsive websites.</p>
+    </div>
+
+
+    <div class="footer-box">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>diyakhatwani363@gmail.com</p>
+      <p>Location: India</p>
+    </div>
+
+
+    <div class="footer-box">
+      <h3>Education</h3>
+      <p>BCA</p>
+      <a href="https://www.dezyneecole.com/" target="_blank" class="dezyne" >Dezyne École College</a>
+      <p>2024 – 2027</p>
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 Diya Khatwani.All rights Reseves</p>
+    <a href="https://www.dezyneecole.com/" target="_blank">Dezyne École College</a>
+
+    <div class="icon">
+      <a href="https://www.github.com/diyakhatwani" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://stackoverflow.com/users/32266241/diya-khatwani" target="_blank" target="_blank"><i
+          class="fab fa-stack-overflow"></i></a>
+      <a href="https://medium.com/@khatwanidiya8" target="_blank" target="_blank"><i class="fab fa-medium"></i></a>
+      <a href="https://www.linkedin.com/in/diya-khatwani-173b99397/" target="_blank" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/_diya_khatwani_/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+  <script>
+
+
+ const btn = document.getElementById("theme");
+  const icon = btn.querySelector("i");
+    if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+    icon.classList.replace("fa-moon", "fa-sun");
+    
+  } else {
+    document.body.classList.remove("light");
+    icon.classList.replace("fa-sun", "fa-moon");
+   
+  }
+
+
+  btn.onclick = () => {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+      localStorage.setItem("theme", "light");
+      icon.classList.replace("fa-moon", "fa-sun");
+      img.src = "home final.png";
+    } else {
+      localStorage.setItem("theme", "dark");
+      icon.classList.replace("fa-sun", "fa-moon");
+      img.src = "home final.png";
+    }
+  };
+ const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+const form = document.querySelector(".contactform form");
+const nameInput = form.querySelector('input[name="name"]');
+const emailInput = form.querySelector('input[name="email"]');
+const messageInput = form.querySelector('textarea[name="message"]');
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let isValid = true;
+
+  // clear old errors
+  form.querySelectorAll(".error").forEach(err => err.innerText = "");
+
+  // Name check
+  if(nameInput.value.trim() === ""){
+    nameInput.nextElementSibling.innerText = "Please fill your name";
+    isValid = false;
+  }
+
+  // Email check
+  if(emailInput.value.trim() === ""){
+    emailInput.nextElementSibling.innerText = "Please fill your email";
+    isValid = false;
+  } 
+  else if(!emailRegex.test(emailInput.value.trim())){
+    emailInput.nextElementSibling.innerText = "Please enter a valid email";
+    isValid = false;
+  }
+
+  // Message check
+  if(messageInput.value.trim() === ""){
+    messageInput.nextElementSibling.innerText = "Please fill your message";
+    isValid = false;
+  }
+
+  // If all valid
+  if(isValid){
+    alert("Message sent successfully!");
+    form.reset();
+  }
+});
+
+
+
+  
+  
+</script>
+</body>
+</html>
