@@ -381,15 +381,9 @@ body.light {
   background-color: #ffffff;
   color: #000;
 }
-
-
-
-
 body.light{
   background-color: #ffffff;
   color: #000;
- 
-
 }
 
 body.light .navbar,
@@ -400,9 +394,6 @@ body.light .footer{
 body.light a{
   color:#111;
 }
-
-
-
  body.light .navbar {
   background-color: #f4f6fb; 
   border-bottom: 2px solid rgba(74, 36, 157, 0.908); 
@@ -691,7 +682,6 @@ body.light .nav-links.active{
     display:none;
   }
 
-  /* MOBILE MENU */
   .nav-links{
     position:absolute;
     top:74px;
@@ -728,7 +718,6 @@ body.light .nav-links.active{
     display:none;
   }
 
-  /* SEARCH BAR UNDER CONTACT */
   .nav-links.active ~ .rightnav{
     position:absolute;
     top:calc(74px + 4 * 48px);
@@ -786,4 +775,5 @@ body.light .nav-links li:hover{
     margin: 5px;
   }
 }
+
 
