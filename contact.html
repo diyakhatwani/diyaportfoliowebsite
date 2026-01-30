@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- Navbar -->
+ 
   <nav class="navbar">
     <div class="logo">Diya</div>
     <div class="menu-toggle" id="menuToggle">
@@ -34,10 +34,9 @@
     </div>
   </nav>
 
-  <!-- Contact Section -->
+ 
   <div class="contact">
-   
-    <div class="info">
+   <div class="info">
       <h2>Get in Touch</h2>
       <p>Feel free to reach out for any project inquiries or just to say hi! I’ll get back to you as soon as possible.</p>
       <p><strong>Email:</strong> diyakhatwani@gmail.com</p>
@@ -169,16 +168,15 @@ form.addEventListener("submit", function(e){
 
   let isValid = true;
 
-  // clear old errors
   form.querySelectorAll(".error").forEach(err => err.innerText = "");
 
-  // Name check
+
   if(nameInput.value.trim() === ""){
     nameInput.nextElementSibling.innerText = "Please fill your name";
     isValid = false;
   }
 
-  // Email check
+ 
   if(emailInput.value.trim() === ""){
     emailInput.nextElementSibling.innerText = "Please fill your email";
     isValid = false;
@@ -188,13 +186,13 @@ form.addEventListener("submit", function(e){
     isValid = false;
   }
 
-  // Message check
+ 
   if(messageInput.value.trim() === ""){
     messageInput.nextElementSibling.innerText = "Please fill your message";
     isValid = false;
   }
 
-  // If all valid
+
   if(isValid){
     alert("Message sent successfully!");
     form.reset();
@@ -208,3 +206,4 @@ form.addEventListener("submit", function(e){
 </script>
 </body>
 </html>
+
